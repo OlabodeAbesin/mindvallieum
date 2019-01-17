@@ -1,0 +1,145 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+html, body {
+  color: #353535;
+  font-family: "Helvetica Neue";
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  height: 80px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: "1fr 1fr"
+}
+
+.title {
+  font-family: "Times", "Times New Roman";
+  font-size: 1.7em;
+  font-weight: 700;
+  margin: 0;
+
+  grid-column: 1 / 2;
+  justify-self: start;
+  align-self: center;
+}
+
+.display-picture {
+  background: #EEE;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+
+  grid-column: 2 / 3;
+  justify-self: end;
+  align-self: center;
+}
+/* .publish-button{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    grid-column: 2 / 3;
+    align-self: center;
+} */
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+      "heading heading heading"
+      "largeArticle article article"
+      "largeArticle article article";
+    grid-column-gap: 1rem;
+  }
+}
+
+.heading {
+  grid-area: heading;
+  border-bottom: 1px solid #DDD;
+  margin-bottom: 1rem;
+}
+
+.heading h4 {
+  display: inline-block;
+  margin: 0;
+  padding-bottom: .5rem;
+}
+
+.large-article {
+  grid-area: largeArticle;
+}
+
+.article {
+  border: 1px solid #DDD;
+  margin-bottom: 1rem;
+}
+
+.article--image {
+  display: block;
+  height: 170px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.article--title {
+  margin: .5rem 0 .1rem;
+  padding: 0 1rem;
+}
+
+.article--preview {
+  color: #999;
+  font-size: .8rem;
+  margin: 0 0 1rem;
+  padding: 0 1rem;
+}
+
+footer {
+  border-top: 1px solid #DDD;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer--list {
+  list-style-type: none;
+  margin: .5rem 0 1rem;
+  padding: 0;
+}
+
+.footer--list li {
+  color: #BBB;
+  display: inline;
+  font-size: .8rem;
+  padding-right: .5rem;
+}
+
+/* #initiallyHidden {
+    display: none;
+} */
+
+.draft{
+  display: none;
+  font-size: small;
+  padding-left: 20px;
+  color:#b3b3b1;
+}
