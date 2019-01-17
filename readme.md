@@ -12,9 +12,9 @@ A simple blog -medium features only
 - Tokenizer PHP Extension
 - XML PHP Extension
 
-## Demo
+<!-- ## Demo
 
-You can try the live demo : [http://gentle-everglades-40337.herokuapp.com/](http://gentle-everglades-40337.herokuapp.com/)
+You can try the live demo : [http://gentle-everglades-40337.herokuapp.com/](http://gentle-everglades-40337.herokuapp.com/) -->
 
 ## Demo login info
 
